@@ -1548,7 +1548,7 @@ scp ~/.vimrc ~/.tmux.conf myserver:
     - git reset --hard HEAD~100：往上回滚100个版本
     - git reset --hard 版本号：回滚到某一特定版本
 12. git checkout — XX或git restore XX：将XX文件尚未加入暂存区的修改全部撤销
-13. git remote add origin git@git.acwing.com:xxx/XXX.git：将本地仓库关联到远程仓库
+13. git remote add origin git@git.acwing.com:xxx/XXX.git：
 14. git push -u (第一次需要-u以后不需要)：将当前分支推送到远程仓库
     - git push origin branch_name：将本地的某个分支推送到远程仓库
 15. git clone git@git.acwing.com:xxx/XXX.git：将远程仓库XXX下载到当前目录下
@@ -1575,3 +1575,7 @@ scp ~/.vimrc ~/.tmux.conf myserver:
     - git branch --set-upstream-to=origin/main master     (设置过一次即可)
     - git push
 
+33.解决网络问题
+
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
